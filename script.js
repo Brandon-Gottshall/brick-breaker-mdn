@@ -76,9 +76,21 @@ function draw () {
   if (y + dy < ballRadius) {
     dy = -dy
   } else if (y + dy > canvas.height - ballRadius) {
+
+
     // alert('GAME OVER')
-    document.location.reload()
-    clearInterval(interval) // Needed for Chrome to end game
+    // document.location.reload()
+    // clearInterval(interval) // Needed for Chrome to end game
+
+    if (x > paddleX && x < paddleX + paddleWidth) {
+      dy = -dy
+    } else {
+      alert('GAME OVER')
+      document.location.reload()
+      clearInterval(interval) // Needed for Chrome to end game
+    }
+
+
   }
   if (x + dx < ballRadius || x + dx > canvas.width - ballRadius) {
     dx = -dx
