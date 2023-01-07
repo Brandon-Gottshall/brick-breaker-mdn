@@ -1,0 +1,16 @@
+#myCanvas {
+  background-color: #C0C2C9;
+}
+.gameTitle {
+  font-family: arial;
+  font-size: 4rem;
+  text-align: center;
+}
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
